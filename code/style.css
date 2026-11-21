@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Montserrat", sans-serif;
+    background-image: url(../images/brickwall.jpg);
+    background-color : #842e1b;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: white;
+}
+
+section{
+    display: flex ;
+    font-size: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    text-align: center;
+    
+}
+section img{ 
+    width : 400px;
+    height : 400px;
+    gap: 40px;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+header{
+    position: sticky;
+    top : 0;
+    z-index: 100;
+    background-color: rgb(230, 230, 230);
+}
+
+nav{
+    position: sticky;
+    top : 0;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    flex-shrink: 0; 
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  padding: 14px 0;
+  margin: 0;
+}
+
+li {
+  flex: 1;                  
+  text-align: center;
+  position: relative;
+}
+
+
+
+li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;                
+  width: 100%;             
+  height: 25px;
+  border-bottom: 3px solid black;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+}
+
+.led img {
+  width: 24px;
+  height: 24px;
+}
+
+.led {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.led:hover {
+  transform: scale(1.15);
+}
+
+.rouge  { background: #ff4a3d; box-shadow: 0 0 15px 4px #ff4a3d; }
+.orange { background: #ffb02e; box-shadow: 0 0 15px 4px #ffb02e; }
+.bleu   { background: #3dd6ff; box-shadow: 0 0 15px 4px #3dd6ff; }
+.violet { background: #b86bff; box-shadow: 0 0 15px 4px #b86bff; }
+.vert   { background: #5dff8a; box-shadow: 0 0 15px 4px #5dff8a; }
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+
+.album {
+    padding: 60px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-content: space-around;}
+
+.disque {
+    flex: 2;
+
+}
+
+.text-disque{
+    text-align: start;
+}
+
+.info {
+    flex: 2;
+}
