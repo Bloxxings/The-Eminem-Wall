@@ -44,8 +44,12 @@ header{
     z-index: 100;
 }
 footer{
+    display: flex;
     bottom : 0;
     background-color :black;
+    justify-content: space-around;
+    padding : 30px;
+    color:#ffffff;
 }
 nav{
     position: sticky;
@@ -57,10 +61,12 @@ nav{
 
 h2{
     margin-bottom: 20px;
+    color:#ffffff;
 }
 
 h2 eminem {
     font-size: 25px;
+    color:#ffffff;
 }
 
 ul{
