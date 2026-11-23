@@ -60,13 +60,17 @@ nav{
 }
 
 h2{
+    display: flex;
     margin-bottom: 20px;
     color:#ffffff;
+    justify-content: center;
 }
 
 h2 eminem {
+    
     font-size: 25px;
     color:#ffffff;
+
 }
 
 ul{
