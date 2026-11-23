@@ -21,17 +21,16 @@ section{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-around;
-    text-align: center;
+    
     
 }
+
 section img{ 
     width : 400px;
     height : 400px;
     gap: 40px;
-}
-
-article {
     margin-bottom: 40px;
+    vertical-align: -30px;
 }
 
 header{
@@ -40,7 +39,10 @@ header{
     z-index: 100;
     background-color: rgb(230, 230, 230);
 }
-
+footer{
+    bottom : 0;
+    background-color: #ffffff;
+}
 nav{
     position: sticky;
     top : 0;
@@ -52,7 +54,6 @@ nav{
 h2{
     margin-bottom: 20px;
 }
-
 ul{
   display: flex;
   list-style: none;
