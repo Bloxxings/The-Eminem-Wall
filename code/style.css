@@ -11,8 +11,7 @@ body{
     background-image: url(../images/brickwall.jpg);
     background-color : #842e1b;
     background-repeat: no-repeat;
-    background-size: cover; 
-    color: white;
+    background-size: cover;
 }
 
 section{
@@ -121,6 +120,8 @@ a{
     color: black;
 }
 
+/* sources pour le vinyle qui tourne: 
+https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
 
 .album {
     padding: 60px;
@@ -130,8 +131,22 @@ a{
     gap: 30px;
     align-content: space-around;}
 
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotating_vinyl {
+    animation: rotating 6s linear infinite;
+
+}
+    
 .disque {
     flex: 2;
+    
 
 }
 
@@ -142,3 +157,4 @@ a{
 .info {
     flex: 2;
 }
+
