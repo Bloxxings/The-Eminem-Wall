@@ -6,22 +6,23 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family:"Montserrat", sans-serif;
+body {
+    font-family: "Montserrat", sans-serif;
     background-image: url(../images/briques.png);
-    background-color : #842e1b;
+    background-color: #842e1b;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-section{
-    display: flex ;
+section {
+    display: flex;
     font-size: 100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-around;
-    
+
 }
+
 h3 {
     text-align: center;
     margin-bottom: 30px;
@@ -30,57 +31,59 @@ h3 {
 h3 img {
     display: block;
 }
-section img{ 
-    width : 300px;
-    height : 300px;
+
+section img {
+    width: 300px;
+    height: 300px;
     gap: 40px;
     margin-bottom: 10px;
 }
 
-header{
+header {
     position: sticky;
-    top : 0;
+    top: 0;
     z-index: 100;
-}
-footer{
-    display: flex;
-    bottom : 0;
-    background-color :black;
-    justify-content: space-around;
-    padding : 30px;
-    color:#ffffff;
-}
-nav{
-    position: sticky;
-    top : 0;
-    z-index: 100;
-    padding: 0.75rem 1rem;
-    flex-shrink: 0; 
 }
 
-h2{
+footer {
+    display: flex;
+    bottom: 0;
+    background-color: black;
+    justify-content: space-around;
+    padding: 30px;
+    color: #ffffff;
+}
+
+nav {
+    padding: 0.75rem 1rem;
+    flex-shrink: 0;
+}
+
+h2 {
     display: flex;
     margin-bottom: 20px;
-    color:black;
+    color: black;
     justify-content: center;
 }
 
 h2 eminem {
-    
-    font-size: 25px;
-    color:black;
 
+    font-size: 25px;
+    color: black;
 }
 
-ul{
+.rotation {
+    rotate: random(-5deg, 5deg);
+}
+
+ul {
     display: flex;
     list-style: none;
-    padding: 14px 0;
     margin: 0;
 }
 
 li {
-    flex: 1;                  
+    flex: 1;
     text-align: center;
     position: relative;
 }
@@ -97,8 +100,8 @@ li:not(:last-child)::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 50%;                
-    width: 100%;             
+    left: 50%;
+    width: 100%;
     height: 25px;
     border-bottom: 6px solid black;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
@@ -119,19 +122,41 @@ li:not(:last-child)::before {
     border-radius: 50%;
     text-decoration: none;
     cursor: pointer;
+    transition-duration: 0.2s;
 }
 
 .led:hover {
     transform: scale(1.15);
+    filter: brightness(140%);
+    transition-duration: 0.2s;
 }
 
-.rouge  { background: #ff4a3d; box-shadow: 0 0 15px 4px #ff4a3d; }
-.orange { background: #ffb02e; box-shadow: 0 0 15px 4px #ffb02e; }
-.bleu   { background: #3dd6ff; box-shadow: 0 0 15px 4px #3dd6ff; }
-.violet { background: #b86bff; box-shadow: 0 0 15px 4px #b86bff; }
-.vert   { background: #5dff8a; box-shadow: 0 0 15px 4px #5dff8a; }
+.rouge {
+    background: #ff4a3d;
+    box-shadow: 0 0 15px 4px #ff4a3d;
+}
 
-a{
+.orange {
+    background: #ffb02e;
+    box-shadow: 0 0 15px 4px #ffb02e;
+}
+
+.bleu {
+    background: #3dd6ff;
+    box-shadow: 0 0 15px 4px #3dd6ff;
+}
+
+.violet {
+    background: #b86bff;
+    box-shadow: 0 0 15px 4px #b86bff;
+}
+
+.vert {
+    background: #5dff8a;
+    box-shadow: 0 0 15px 4px #5dff8a;
+}
+
+a {
     text-decoration: none;
     font-weight: bold;
     color: black;
@@ -146,32 +171,56 @@ https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    align-content: space-around;}
+    align-content: space-around;
+}
+
+.disque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.vinyl {
+    display: grid;
+    place-items: center;
+    /* Superpose les deux images exactement par leur centre */
+    margin: 0;
+}
+
+.rotating_vinyl,
+.cover {
+    grid-area: 1 / 1;
+    animation: rotating 6s linear infinite;
+}
+
+
+.rotating_vinyl {
+    z-index: 1;
+}
+
+.cover {
+    z-index: 2;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    object-fit: cover;
+}
 
 @keyframes rotating {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.rotating_vinyl {
-    animation: rotating 6s linear infinite;
+    from {
+        transform: rotate(0deg);
+    }
 
-}
-    
-.disque {
-    flex: 2;
-    
-
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.text-disque{
+.text-disque {
     text-align: start;
 }
 
 .info {
     flex: 2;
 }
-
