@@ -158,9 +158,11 @@ li:not(:last-child)::before {
 a {
     text-decoration: none;
     font-weight: bold;
+    color: #ffffff;
+}
+.vinyle a {
     color: black;
 }
-
 /* sources pour le vinyle qui tourne: 
 https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
 
