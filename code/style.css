@@ -225,3 +225,91 @@ https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
 .info {
     flex: 2;
 }
+
+main {
+    padding: 150px 16px 60px 16px;
+}
+
+.avis {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fbf7ec;
+    border: 2px solid #141414;
+    border-radius: 6px;
+    font-family: Verdana, sans-serif;
+    color: #141414;
+}
+
+.avis h1 {
+    margin: 0 0 10px 0;
+    font-family: Impact, sans-serif;
+    font-weight: normal;
+    font-size: 2.2rem;
+}
+
+.avis .intro {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #c9c3b8;
+}
+
+.avis p {
+    margin: 0 0 18px 0;
+}
+
+.avis label,
+.avis legend {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.avis input[type="text"],
+.avis input[type="email"],
+.avis select,
+.avis textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: Verdana, sans-serif;
+    background-color: white;
+    border: 2px solid #141414;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.avis textarea {
+    resize: vertical;
+}
+
+.avis fieldset {
+    margin: 0 0 18px 0;
+    padding: 0;
+    border: none;
+}
+
+.avis fieldset label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.avis .note-champs {
+    font-size: 0.8rem;
+}
+
+.avis button {
+    width: 100%;
+    padding: 14px;
+    font-family: Impact, sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #141414;
+    border: none;
+    border-radius: 2px;
+}
+
+.avis button:hover {
+    background-color: #333333;
+}

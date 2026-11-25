@@ -1,23 +1,86 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>TEW - Avis</title>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon.ico">
-    </head>
-    <body>
-        <header>
-            <h1> EMINƎM </h1>
-            <nav>
-                <ul>
-                    <li><a class="led rouge" href="index.html" aria-label="Menu"><img src="../images/menu.svg" alt=""></a></li>
-                    <li><a class="led orange" href="source.html" aria-label="sources"><img src="../images/sources.svg" alt=""></a></li>
-                    <li><a class="led bleu" href="film.html" aria-label="film"><img src="../images/film.svg" alt=""></a></li>
-                    <li><a class="led violet" href="theme.html" aria-label="theme"><img src="../images/theme.svg" alt=""></a></li>
-                    <li><a class="led vert" href="avis.html" aria-label="avis"><img src="../images/avis.svg" alt=""></a></li>
-                </ul>
-            </nav>
-        </header>
-    </body>
+
+<head>
+    <title>TEW - Avis</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1> EMINƎM </h1>
+        <nav>
+            <ul>
+                <li><a class="led rouge" href="index.html" aria-label="Menu"><img src="../images/menu.svg" alt=""></a>
+                </li>
+                <li><a class="led orange" href="source.html" aria-label="sources"><img src="../images/sources.svg"
+                            alt=""></a></li>
+                <li><a class="led bleu" href="film.html" aria-label="film"><img src="../images/film.svg" alt=""></a>
+                </li>
+                <li><a class="led violet" href="theme.html" aria-label="theme"><img src="../images/theme.svg"
+                            alt=""></a></li>
+                <li><a class="led vert" href="avis.html" aria-label="avis"><img src="../images/avis.svg" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="avis" action="https://formspree.io/f/xljbzoaa" method="post">
+            <h1>Donnez votre avis</h1>
+            <p class="intro">Votre avis nous aide à améliorer le site. Merci de prendre quelques instants pour répondre!
+            </p>
+
+            <p>
+                <label for="nom">Nom ou pseudo *</label>
+                <input type="text" id="nom" name="nom" placeholder="Ex : Eminem" autocomplete="nickname" required>
+            </p>
+
+            <p>
+                <label for="mail">Votre e-mail (facultatif)</label>
+                <input type="email" id="mail" name="email" placeholder="nom@exemple.fr" autocomplete="email">
+            </p>
+
+            <p>
+                <label for="album">Votre album préféré</label>
+                <select id="album" name="album_prefere">
+                    <option value="">Choisir un album…</option>
+                    <option>Infinite</option>
+                    <option>The Slim Shady LP</option>
+                    <option>The Marshall Mathers LP</option>
+                    <option>The Eminem Show</option>
+                    <option>Encore</option>
+                    <option>Relapse</option>
+                    <option>Recovery</option>
+                    <option>The Marshall Mathers LP 2</option>
+                    <option>Revival</option>
+                    <option>Kamikaze</option>
+                    <option>Music To Be Murdered By</option>
+                    <option>The Death Of Slim Shady</option>
+                </select>
+            </p>
+
+            <fieldset>
+                <legend>Une petite note ??? *</legend>
+                <label><input type="radio" name="note" value="1" required> 1</label>
+                <label><input type="radio" name="note" value="2"> 2</label>
+                <label><input type="radio" name="note" value="3"> 3</label>
+                <label><input type="radio" name="note" value="4"> 4</label>
+                <label><input type="radio" name="note" value="5"> 5</label>
+            </fieldset>
+
+            <p>
+                <label for="message">Votre avis *</label>
+                <textarea id="message" name="avis" rows="6" maxlength="1000"
+                    placeholder="Ce que vous avez aimé, ce qu'on pourrait améliorer…" required></textarea>
+            </p>
+
+            <p class="note-champs">* champs obligatoires</p>
+
+            <button type="submit">Envoyer mon avis</button>
+        </form>
+    </main>
+</body>
+
 </html>
