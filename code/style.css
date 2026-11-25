@@ -20,7 +20,7 @@ section {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-around;
-
+    gap: 40px;
 }
 
 h3 {
@@ -35,7 +35,6 @@ h3 img {
 section img {
     width: 300px;
     height: 300px;
-    gap: 40px;
     margin-bottom: 10px;
 }
 
@@ -158,6 +157,10 @@ li:not(:last-child)::before {
 a {
     text-decoration: none;
     font-weight: bold;
+    color: #ffffff;
+}
+
+.vinyle a {
     color: black;
 }
 
