@@ -113,7 +113,6 @@ li title {
     font-weight: bold;
 }
 
-
 li:not(:last-child)::before {
     content: "";
     position: absolute;
@@ -215,7 +214,6 @@ https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
     grid-area: 1 / 1;
     animation: rotating 6s linear infinite;
 }
-
 
 .rotating_vinyl {
     z-index: 1;
