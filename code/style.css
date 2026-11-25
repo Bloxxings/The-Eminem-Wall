@@ -50,9 +50,28 @@ footer {
     background-color: black;
     justify-content: space-around;
     padding: 30px;
-    color: #ffffff;
 }
 
+footer h1,
+footer h2,
+footer h3,
+footer p,
+footer a {
+    color: white;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    padding: 0;
+    margin-bottom: 0;
+}
+.accessibilite{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 nav {
     padding: 0.75rem 1rem;
     flex-shrink: 0;
