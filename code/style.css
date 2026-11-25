@@ -160,9 +160,11 @@ a {
     font-weight: bold;
     color: #ffffff;
 }
+
 .vinyle a {
     color: black;
 }
+
 /* sources pour le vinyle qui tourne: 
 https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
 
