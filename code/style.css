@@ -189,8 +189,8 @@ li:not(:last-child)::before {
 }
 
 .orange {
-    background: #ffb02e;
-    box-shadow: 0 0 15px 4px #ffb02e;
+    background: #5dff8a;
+    box-shadow: 0 0 15px 4px #5dff8a;
 }
 
 .bleu {
@@ -204,8 +204,8 @@ li:not(:last-child)::before {
 }
 
 .vert {
-    background: #5dff8a;
-    box-shadow: 0 0 15px 4px #5dff8a;
+    background: #ffb02e;
+    box-shadow: 0 0 15px 4px #ffb02e;
 }
 
 a {
