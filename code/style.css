@@ -24,6 +24,7 @@ audio{
     z-index: 200;
     border: 2px solid #b86bff;
     border-radius: 30px;
+    opacity : 0.6;
 }
 section {
     display: flex;
