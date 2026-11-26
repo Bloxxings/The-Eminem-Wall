@@ -82,7 +82,9 @@ footer img {
     padding: 0;
     margin-bottom: 0;
 }
-
+.accessibilite nav {
+    padding: 0;
+}
 .accessibilite {
     display: flex;
     flex-direction: column;
