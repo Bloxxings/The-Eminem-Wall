@@ -53,7 +53,7 @@ header::after {
     animation: rotating 8s linear infinite;
 }
 
-li title {
+li strong {
     display: none;
 }
 

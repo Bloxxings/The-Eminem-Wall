@@ -135,7 +135,7 @@ li {
     position: relative;
 }
 
-li title {
+li strong {
     display: block;
     margin-top: 8px;
     font-size: 13px;
