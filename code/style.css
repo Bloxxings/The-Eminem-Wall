@@ -197,7 +197,7 @@ li:not(:last-child)::before {
     box-shadow: 0 0 15px 4px #b86bff;
 }
 
-.vert {
+.green {
     background: #ffb02e;
     box-shadow: 0 0 15px 4px #ffb02e;
 }
@@ -224,7 +224,7 @@ https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
     align-content: space-around;
 }
 
-.disque {
+.disk {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,7 +265,7 @@ https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
     }
 }
 
-.text-disque {
+.text-disk {
     text-align: start;
 }
 
