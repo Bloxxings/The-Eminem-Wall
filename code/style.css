@@ -368,9 +368,49 @@ main {
 }
 
 .avis button:hover {
-    background-color: #333333;
+    <<<<<<< Updated upstream background-color: #444;
 }
 
+.note {
+    position: relative;
+    width: min(90%, 520px);
+    margin: 4rem auto;
+    padding: 2.5rem 2rem 2rem;
+    background: #fff176;
+    color: #2b2b2b;
+    border-radius: 3px;
+    transform: rotate(-2deg);
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.45),
+        inset 0 -20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.note::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: #d32f2f;
+}
+
+
+.note h2 {
+    margin: 0 0 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.note .apropos {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    text-align: center;
+    =======background-color: #333333;
+}
 
 .film {
     max-width: 640px;
@@ -381,4 +421,5 @@ main {
     border-radius: 6px;
     font-family: Verdana, sans-serif;
     color: #141414;
+    >>>>>>>Stashed changes
 }
