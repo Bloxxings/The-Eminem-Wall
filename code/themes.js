@@ -1,34 +1,17 @@
-// Source - https://stackoverflow.com/a/67307183
-// Posted by Liftoff, modified by community. See post 'Timeline' for change history
-// Retrieved 2026-11-23, License - CC BY-SA 4.0
-
-window.onload = function(){
-  var viewmode = getCookie("viewmode");
-  if(viewmode)
-    document.getElementById('pagestyle').setAttribute('href', viewmode);
+function swapStyleSheet(sheet) {
+  var link = document.getElementById('pagestyle');
+  // garde le dossier de la page actuelle ("" ou "../")
+  var dossier = link.getAttribute('href').replace(/[^\/]*$/, '');
+  link.setAttribute('href', dossier + sheet);
+  try { localStorage.setItem('theme', sheet); } catch (e) { }
 }
 
-function swapStyleSheet(sheet){
-  document.getElementById('pagestyle').setAttribute('href', sheet);
-  setCookie("viewmode", sheet, 30);
-}
+(function () {
+  var theme;
+  try { theme = localStorage.getItem('theme'); } catch (e) { }
+  if (theme) swapStyleSheet(theme);
+})();
 
-function setCookie(name, value, days)
-{
-  var d = new Date();
-  d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
-  document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/";
-}
-
-function getCookie(name)
-{
-  var cookies = document.cookie.split(";");
-  for(var i = 0; i < cookies.length; i++)
-  {
-    var ck = cookies[i].trim().split("=");
-    if(ck[0] == name)
-      return ck[1];
-  }
-  
-  return false;
-}
+//code généré avec ia en réponse au prompt suivant :
+// "en Javascript, écrit un code à implémenter dans mon site, permettant de changer le thème css d'un site web,
+// en rempacant sa feuille de style css et de le garder sur toute les page du navigateurs

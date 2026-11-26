@@ -15,7 +15,7 @@ body {
     background-size: cover;
     flex-direction: column;
     min-height: 100vh;
-    
+
 }
 
 section {
@@ -72,9 +72,6 @@ footer {
     color: #d9ff00;
 }
 
-footer h1,
-footer h2,
-footer h3,
 footer p,
 footer a {
     color: white;
@@ -87,9 +84,11 @@ footer img {
     padding: 0;
     margin-bottom: 0;
 }
+
 .accessibilite nav {
     padding: 0;
 }
+
 .accessibilite {
     display: flex;
     flex-direction: column;
@@ -232,7 +231,6 @@ https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
 .vinyl {
     display: grid;
     place-items: center;
-    /* Superpose les deux images exactement par leur centre */
     margin: 0;
 }
 
@@ -273,7 +271,7 @@ https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
 }
 
 main {
-    flex: 1 ;
+    flex: 1;
     padding: 150px 16px 60px 16px;
 }
 
@@ -379,7 +377,8 @@ main {
 .avis button:hover {
     background-color: #444;
 }
-.note_s{
+
+.note_s {
     position: relative;
     width: min(90%, 520px);
     margin: 4rem auto;
@@ -396,6 +395,7 @@ main {
 .note_s a {
     color: black;
 }
+
 .note_s::before {
     content: "";
     position: absolute;
@@ -407,6 +407,7 @@ main {
     border-radius: 50%;
     background: #d32f2f;
 }
+
 .note {
     position: relative;
     width: min(90%, 520px);
@@ -420,19 +421,6 @@ main {
         0 12px 25px rgba(0, 0, 0, 0.45),
         inset 0 -20px 30px rgba(0, 0, 0, 0.06);
 }
-
-.note::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    background: #d32f2f;
-}
-
 
 .note h2 {
     margin: 0 0 1rem;
@@ -515,4 +503,22 @@ main {
     transform: scale(1.03);
     color: #d9ff00;
     background: #000000;
+}
+
+button {
+    align-self: flex-start;
+    margin: 0 0 12px 32px;
+    padding: 10px 22px;
+    font-family: "arial", sans-serif;
+    color: white;
+    background-color: #000000;
+    border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
 }
