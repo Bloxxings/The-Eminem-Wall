@@ -114,7 +114,7 @@ li strong {
 }
 
 .green::after {
-    content: "feedback";
+    content: "avis";
 }
 
 .led:hover {
@@ -269,7 +269,7 @@ h3::before {
     line-height: 1.5;
 }
 
-.feedback {
+.avis {
     position: relative;
     max-width: 640px;
     margin: 0.2rem auto;
@@ -284,7 +284,7 @@ h3::before {
     color: #2b2b2b;
 }
 
-.feedback::before {
+.avis::before {
     content: "";
     position: absolute;
     top: -10px;
@@ -296,7 +296,7 @@ h3::before {
     background: #d32f2f;
 }
 
-.feedback h1 {
+.avis h1 {
     margin: 0 0 10px 0;
     text-align: center;
     font-family: Impact, sans-serif;
@@ -304,28 +304,28 @@ h3::before {
     font-size: 2.2rem;
 }
 
-.feedback .intro {
+.avis .intro {
     margin-bottom: 25px;
     padding-bottom: 20px;
     text-align: center;
     border-bottom: 2px dashed rgba(0, 0, 0, 0.25);
 }
 
-.feedback p {
+.avis p {
     margin: 0 0 18px 0;
 }
 
-.feedback label,
-.feedback legend {
+.avis label,
+.avis legend {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
 }
 
-.feedback input[type="text"],
-.feedback input[type="email"],
-.feedback select,
-.feedback textarea {
+.avis input[type="text"],
+.avis input[type="email"],
+.avis select,
+.avis textarea {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -336,27 +336,27 @@ h3::before {
     box-sizing: border-box;
 }
 
-.feedback textarea {
+.avis textarea {
     resize: greenical;
 }
 
-.feedback fieldset {
+.avis fieldset {
     margin: 0 0 18px 0;
     padding: 0;
     border: none;
 }
 
-.feedback fieldset label {
+.avis fieldset label {
     display: inline-block;
     margin-right: 15px;
     font-weight: normal;
 }
 
-.feedback .note-champs {
+.avis .note-champs {
     font-size: 0.8rem;
 }
 
-.feedback button {
+.avis button {
     display: block;
     align-self: auto;
     width: 100%;
@@ -371,7 +371,7 @@ h3::before {
     cursor: pointer;
 }
 
-.feedback button:hover {
+.avis button:hover {
     color: white;
     background-color: #444;
 }
