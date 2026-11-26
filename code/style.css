@@ -48,6 +48,7 @@ header {
 
 footer {
     display: flex;
+    flex-shrink: 0;
     bottom: 0;
     background-color: black;
     justify-content: space-around;
@@ -268,6 +269,7 @@ https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
 }
 
 main {
+    flex: 1 0 auto;
     padding: 150px 16px 60px 16px;
 }
 
@@ -381,7 +383,7 @@ main {
     background: #6eeb6a;
     color: #2b2b2b;
     border-radius: 3px;
-    transform: rotate(-2deg);
+    transform: rotate(2deg);
     box-shadow:
         0 12px 25px rgba(0, 0, 0, 0.45),
         inset 0 -20px 30px rgba(0, 0, 0, 0.06);
