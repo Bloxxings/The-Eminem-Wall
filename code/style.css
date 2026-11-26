@@ -195,7 +195,7 @@ li:not(:last-child)::before {
 a {
     text-decoration: none;
     font-weight: bold;
-    color: #ffffff;
+    color: #fff;
 }
 
 .vinyle a {
@@ -207,7 +207,7 @@ https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
 
 .album {
     padding: 60px;
-    background-color: #ffffff;
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
