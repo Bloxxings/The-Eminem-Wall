@@ -144,24 +144,6 @@ h2 {
     rotate: 0deg;
 }
 
-button {
-    align-self: flex-start;
-    margin: 0 0 12px 32px;
-    padding: 10px 22px;
-    font-family: "arial", sans-serif;
-    color: white;
-    background-color: #07143a;
-    border: 1px solid white;
-    border-radius: 30px;
-    cursor: pointer;
-
-}
-
-button:hover {
-    color: black;
-    background-color: #d9ff00;
-}
-
 .vinyle {
     display: flex;
     flex-wrap: wrap;

@@ -28,8 +28,10 @@
                 <li><a class="led bleu" href="film.html" aria-label="film"><img src="../images/film.svg" alt=""></a>
                     <title>Film</title>
                 </li>
-                <li><a class="led violet" href="theme.html" aria-label="theme"><img src="../images/theme.svg"
-                            alt=""></a>
+                <li><a class="led violet" href="theme.html" aria-label="theme"
+                        onclick="swapStyleSheet(document.getElementById('pagestyle').getAttribute('href').endsWith('dvd.css') ? 'style.css' : 'dvd.css'); return false;">
+                        <img src="../images/theme.svg" alt="">
+                    </a>
                     <title>Thème</title>
                 </li>
                 <li><a class="led vert" href="avis.html" aria-label="avis"><img src="../images/avis.svg" alt=""></a>
