@@ -17,7 +17,15 @@ body {
     min-height: 100vh;
 
 }
-
+audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 200;
+    border: 2px solid #b86bff;
+    border-radius: 30px;
+    opacity : 0.6;
+}
 section {
     display: flex;
     font-size: 100%;
@@ -180,8 +188,8 @@ li:not(:last-child)::before {
 }
 
 .orange {
-    background: #ffb02e;
-    box-shadow: 0 0 15px 4px #ffb02e;
+    background: #5dff8a;
+    box-shadow: 0 0 15px 4px #5dff8a;
 }
 
 .bleu {
@@ -195,8 +203,8 @@ li:not(:last-child)::before {
 }
 
 .vert {
-    background: #5dff8a;
-    box-shadow: 0 0 15px 4px #5dff8a;
+    background: #ffb02e;
+    box-shadow: 0 0 15px 4px #ffb02e;
 }
 
 a {
