@@ -120,7 +120,7 @@ h2 {
 }
 
 .rotation {
-    rotate: random(-5deg, 5deg);
+    rotate: random(-5, 5);
 }
 
 ul {
