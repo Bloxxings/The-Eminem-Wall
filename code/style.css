@@ -64,7 +64,7 @@ footer {
 
 .hover:hover {
     transform: scale(1.05);
-    color: #d4af37;
+    color: #d9ff00;
 }
 
 footer h1,
@@ -368,7 +368,7 @@ main {
 }
 
 .avis button:hover {
-    <<<<<<< Updated upstream background-color: #444;
+    background-color: #444;
 }
 
 .note {
@@ -409,17 +409,74 @@ main {
     line-height: 1.6;
     font-size: 1.05rem;
     text-align: center;
-    background-color: #333333;
 }
 
 .film {
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #fbf7ec;
-    border: 2px solid #141414;
-    border-radius: 6px;
-    font-family: Verdana, sans-serif;
-    color: #141414;
-    >>>>>>>Stashed changes
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.tele {
+    position: relative;
+}
+
+.cadre {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.ecran {
+    position: absolute;
+    left: 24.8%;
+    top: 17.6%;
+    width: 49.8%;
+    height: 55.7%;
+    background: #000;
+}
+
+.film .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: none;
+    padding: 0;
+}
+
+.film .info h1,
+.film .info p,
+.film .info a {
+    background: white;
+    color: #111;
+    border-radius: 14px;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.35);
+}
+
+.film .info h1 {
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+}
+
+.film .info p {
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+.film .info a {
+    padding: 1rem 1.5rem;
+    text-align: center;
+    transition: transform 0.5s ease, color 0.4s ease;
+}
+
+.film .info a:hover {
+    transform: scale(1.03);
+    color: #d9ff00;
+    background: #000000;
 }
