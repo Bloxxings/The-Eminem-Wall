@@ -7,11 +7,15 @@
 }
 
 body {
+    display: flex;
     font-family: "Montserrat", sans-serif;
     background-image: url(../images/briques.png);
     background-color: #842e1b;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
+    min-height: 100vh;
+    
 }
 
 section {
@@ -269,7 +273,7 @@ https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
 }
 
 main {
-    flex: 1 0 auto;
+    flex: 1 ;
     padding: 150px 16px 60px 16px;
 }
 
