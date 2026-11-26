@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>TEW - feedback</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Donner son feedback sur le site internet">
+    <link id="pagestyle" rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="themes.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1> EMINƎM </h1>
+        <nav>
+            <ul>
+                <li><a class="led red" href="../index.html" aria-label="Menu"><img src="../images/menu.svg" alt=""></a>
+                </li>
+                <li><a class="led orange" href="source.html" aria-label="sources"><img src="../images/sources.svg"
+                            alt=""></a></li>
+                <li><a class="led blue" href="film.html" aria-label="film"><img src="../images/film.svg" alt=""></a>
+                </li>
+                <li><a class="led purple" href="theme.html" aria-label="theme"
+                        onclick="swapStyleSheet(document.getElementById('pagestyle').getAttribute('href').endsWith('dvd.css') ? 'style.css' : 'dvd.css'); return false;">
+                        <img src="../images/theme.svg" alt="">
+                    </a></li>
+                <li><a class="led green" href="feedback.html" aria-label="feedback"><img src="../images/feedback.svg" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="feedback" action="https://formspree.io/f/xljbzoaa" method="post">
+            <h1>Donnez votre feedback</h1>
+            <p class="intro">Votre feedback nous aide à améliorer le site. Merci de prendre quelques instants pour répondre!
+            </p>
+            <p>
+                <label for="nom">Nom ou pseudo *</label>
+                <input type="text" id="nom" name="nom" placeholder="Ex : Eminem" autocomplete="nickname" required>
+            </p>
+            <p>
+                <label for="mail">Votre e-mail (facultatif)</label>
+                <input type="email" id="mail" name="email" placeholder="nom@exemple.fr" autocomplete="email">
+            </p>
+            <p>
+                <label for="album">Votre album préféré</label>
+                <select id="album" name="album_prefere">
+                    <option value="">Choisir un album…</option>
+                    <option>Infinite</option>
+                    <option>The Slim Shady LP</option>
+                    <option>The Marshall Mathers LP</option>
+                    <option>The Eminem Show</option>
+                    <option>Encore</option>
+                    <option>Relapse</option>
+                    <option>Recovery</option>
+                    <option>The Marshall Mathers LP 2</option>
+                    <option>Revival</option>
+                    <option>Kamikaze</option>
+                    <option>Music To Be Murdered By</option>
+                    <option>The Death Of Slim Shady</option>
+                </select>
+            </p>
+            <fieldset>
+                <legend>Une petite note ??? *</legend>
+                <label><input type="radio" name="note" value="1" required> 1</label>
+                <label><input type="radio" name="note" value="2"> 2</label>
+                <label><input type="radio" name="note" value="3"> 3</label>
+                <label><input type="radio" name="note" value="4"> 4</label>
+                <label><input type="radio" name="note" value="5"> 5</label>
+            </fieldset>
+
+            <p>
+                <label for="message">Votre feedback *</label>
+                <textarea id="message" name="feedback" rows="6" maxlength="1000"
+                    placeholder="Ce que vous avez aimé, ce qu'on pourrait améliorer…" required></textarea>
+            </p>
+
+            <p class="note-champs">* champs obligatoires</p>
+
+            <button type="submit">Envoyer mon feedback</button>
+        </form>
+    </main>
+
+    <footer>
+        <section class="accessibility">
+            <p class="footer_section_p">Nous et l'histoire du site </p>
+            <a class="hover" href="a_propos.html"> A propos de notre site </a>
+            <nav aria-label="Réseaux sociaux">
+                <a target="_blank" class="hover" href="https://www.instagram.com/iutaixmars/?hl=fr">
+                    <img src="../images/insta.jpg" alt="logo instagrame">
+                </a>
+                <a target="_blank" class="hover" href="https://www.facebook.com/IUTMars/?locale=fr_FR">
+                    <img src="../images/facebook.jpeg" alt="logo facebook">
+                </a>
+            </nav>
+        </section>
+        <a class="hover" href="../index.html"> Accueil</a>
+        <a class="hover" target="_blank" href="https://link.deezer.com/s/352DNKpyptUnPWo45KgaD">Deezer</a>
+        <p>&copy; 2026 Eminem. Tous droits réservés.<br>
+            &copy; crée par Tony, Shun et Méline</p>
+    </footer>
+</body>
+
+</html>

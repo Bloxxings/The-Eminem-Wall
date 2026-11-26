@@ -90,16 +90,16 @@ footer a {
 footer img {
     width: 50px;
     height: 50px;
-    vertical-align: middle;
+    greenical-align: middle;
     padding: 0;
     margin-bottom: 0;
 }
 
-.accessibilite nav {
+.accessibility nav {
     padding: 0;
 }
 
-.accessibilite {
+.accessibility {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -177,7 +177,7 @@ li:not(:last-child)::before {
     transition-duration: 0.2s;
 }
 
-.rouge {
+.red {
     background: #ff4a3d;
     box-shadow: 0 0 15px 4px #ff4a3d;
 }
@@ -187,12 +187,12 @@ li:not(:last-child)::before {
     box-shadow: 0 0 15px 4px #5dff8a;
 }
 
-.bleu {
+.blue {
     background: #3dd6ff;
     box-shadow: 0 0 15px 4px #3dd6ff;
 }
 
-.violet {
+.purple {
     background: #b86bff;
     box-shadow: 0 0 15px 4px #b86bff;
 }
@@ -208,11 +208,11 @@ a {
     color: #ffffff;
 }
 
-.vinyle a {
+.vinyl_menu a {
     color: black;
 }
 
-/* sources pour le vinyle qui tourne: 
+/* sources pour le vinyl qui tourne: 
 https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
 
 .album {
@@ -278,7 +278,7 @@ main {
     padding: 16px 16px 60px 16px;
 }
 
-.avis {
+.feedback {
     position: relative;
     max-width: 640px;
     margin: 0.2rem auto;
@@ -293,7 +293,7 @@ main {
     color: #2b2b2b;
 }
 
-.avis::before {
+.feedback::before {
     content: "";
     position: absolute;
     top: -10px;
@@ -305,7 +305,7 @@ main {
     background: #d32f2f;
 }
 
-.avis h1 {
+.feedback h1 {
     margin: 0 0 10px 0;
     text-align: center;
     font-family: Impact, sans-serif;
@@ -313,28 +313,28 @@ main {
     font-size: 2.2rem;
 }
 
-.avis .intro {
+.feedback .intro {
     margin-bottom: 25px;
     padding-bottom: 20px;
     text-align: center;
     border-bottom: 2px dashed rgba(0, 0, 0, 0.25);
 }
 
-.avis p {
+.feedback p {
     margin: 0 0 18px 0;
 }
 
-.avis label,
-.avis legend {
+.feedback label,
+.feedback legend {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
 }
 
-.avis input[type="text"],
-.avis input[type="email"],
-.avis select,
-.avis textarea {
+.feedback input[type="text"],
+.feedback input[type="email"],
+.feedback select,
+.feedback textarea {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -345,27 +345,27 @@ main {
     box-sizing: border-box;
 }
 
-.avis textarea {
-    resize: vertical;
+.feedback textarea {
+    resize: greenical;
 }
 
-.avis fieldset {
+.feedback fieldset {
     margin: 0 0 18px 0;
     padding: 0;
     border: none;
 }
 
-.avis fieldset label {
+.feedback fieldset label {
     display: inline-block;
     margin-right: 15px;
     font-weight: normal;
 }
 
-.avis .note-champs {
+.feedback .note-champs {
     font-size: 0.8rem;
 }
 
-.avis button {
+.feedback button {
     display: block;
     align-self: auto;
     width: 100%;
@@ -380,7 +380,7 @@ main {
     cursor: pointer;
 }
 
-.avis button:hover {
+.feedback button:hover {
     color: white;
     background-color: #444;
     border: none;
@@ -448,7 +448,7 @@ main {
     font-size: 1.6rem;
 }
 
-.note .apropos {
+.note .aboutusus {
     margin: 0;
     line-height: 1.6;
     font-size: 1.05rem;
@@ -463,11 +463,11 @@ main {
     align-items: center;
 }
 
-.tele {
+.tv {
     position: relative;
 }
 
-.cadre {
+.frame {
     display: block;
     width: 100%;
     height: auto;
@@ -477,7 +477,7 @@ main {
     pointer-events: none;
 }
 
-.ecran {
+.screen {
     position: absolute;
     left: 24.8%;
     top: 17.6%;

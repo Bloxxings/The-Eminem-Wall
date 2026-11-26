@@ -89,7 +89,7 @@ li strong {
     background: #3dd6ff;
 }
 
-.violet img {
+.purple img {
     background: #b86bff;
 }
 
@@ -109,12 +109,12 @@ li strong {
     content: "Film";
 }
 
-.violet::after {
+.purple::after {
     content: "Thème";
 }
 
 .green::after {
-    content: "Avis";
+    content: "feedback";
 }
 
 .led:hover {
@@ -144,7 +144,7 @@ h2 {
     rotate: 0deg;
 }
 
-.vinyle {
+.vinyl_menu {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -169,12 +169,12 @@ h3::before {
     font-size: 10px;
     letter-spacing: 3px;
     text-align: left;
-    color: blue;
+    color: rgb(80, 80, 255);
 }
 
 /*compteur fait avec: https://developer.mozilla.org/fr/docs/Web/CSS/Guides/Counter_styles/Using_counters*/
 
-.vinyle img {
+.vinyl_menu img {
     display: block;
     width: 100%;
     height: auto;
@@ -183,11 +183,11 @@ h3::before {
     transition: 0.25s;
 }
 
-.vinyle a:hover {
+.vinyl_menu a:hover {
     color: #d9ff00;
 }
 
-.vinyle a:hover img {
+.vinyl_menu a:hover img {
     border-color: #d9ff00;
     transform: scale(1.05);
 }
@@ -337,7 +337,7 @@ h3::before {
 }
 
 .feedback textarea {
-    resize: vertical;
+    resize: greenical;
 }
 
 .feedback fieldset {
@@ -439,7 +439,7 @@ h3::before {
     font-size: 1.6rem;
 }
 
-.note .about {
+.note .aboutusus {
     margin: 0;
     line-height: 1.6;
     font-size: 1.05rem;
@@ -548,7 +548,7 @@ footer a {
 footer img {
     width: 50px;
     height: 50px;
-    vertical-align: middle;
+    greenical-align: middle;
     padding: 0;
     margin-bottom: 0;
 }
