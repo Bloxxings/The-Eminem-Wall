@@ -17,7 +17,14 @@ body {
     min-height: 100vh;
     
 }
-
+audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 200;
+    border: 2px solid #b86bff;
+    border-radius: 30px;
+}
 section {
     display: flex;
     font-size: 100%;
