@@ -49,7 +49,7 @@ header::after {
     height: 120px;
     margin: auto auto 0 auto;
     border-radius: 50%;
-    background: conic-gradient(#cfd9ff, #8affd4, #ffd6f5, #fff7b0, #cfd9ff);
+    background: url(../images/dvd.png) center / cover no-repeat;
     animation: rotating 8s linear infinite;
 }
 
@@ -375,7 +375,10 @@ h3::before {
 }
 
 .avis button {
+    display: block;
+    align-self: auto;
     width: 100%;
+    margin: 0;
     padding: 14px;
     font-family: Impact, sans-serif;
     font-size: 1.3rem;
@@ -387,6 +390,7 @@ h3::before {
 }
 
 .avis button:hover {
+    color: white;
     background-color: #444;
 }
 

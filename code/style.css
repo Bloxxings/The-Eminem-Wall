@@ -17,15 +17,17 @@ body {
     min-height: 100vh;
 
 }
-audio{
+
+audio {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 200;
     border: 2px solid #b86bff;
     border-radius: 30px;
-    opacity : 0.6;
+    opacity: 0.6;
 }
+
 section {
     display: flex;
     font-size: 100%;
@@ -61,7 +63,7 @@ header {
 footer {
     display: flex;
     flex-shrink: 0;
-    bottom: 0;
+    margin-top: auto;
     background-color: black;
     justify-content: space-around;
     padding: 10px;
@@ -116,13 +118,6 @@ h2 {
     color: black;
     justify-content: center;
 }
-
-h2 eminem {
-
-    font-size: 25px;
-    color: black;
-}
-
 
 .rotation {
     rotate: random(-5deg, 5deg);
@@ -280,7 +275,7 @@ https://vitalyn.com/blog/css-faire-tourner-une-image-indefiniment/ */
 
 main {
     flex: 1;
-    padding: 150px 16px 60px 16px;
+    padding: 16px 16px 60px 16px;
 }
 
 .avis {
@@ -371,7 +366,10 @@ main {
 }
 
 .avis button {
+    display: block;
+    align-self: auto;
     width: 100%;
+    margin: 0;
     padding: 14px;
     font-family: Impact, sans-serif;
     font-size: 1.3rem;
@@ -383,7 +381,9 @@ main {
 }
 
 .avis button:hover {
+    color: white;
     background-color: #444;
+    border: none;
 }
 
 .note_s {
