@@ -111,6 +111,7 @@ h2 eminem {
     color: black;
 }
 
+
 .rotation {
     rotate: random(-5deg, 5deg);
 }
@@ -372,7 +373,9 @@ main {
 .avis button:hover {
     background-color: #444;
 }
-
+.note a {
+    color: black;
+}
 .note {
     position: relative;
     width: min(90%, 520px);
